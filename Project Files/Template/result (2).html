@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1580191947414-d5b2c66c76ae');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding-top: 100px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            background-color: rgba(0,0,0,0.6);
+            display: inline-block;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        h2 {
+            font-size: 60px;
+            color: #f1c40f;
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            display: inline-block;
+            border-radius: 12px;
+        }
+        button {
+            padding: 12px 24px;
+            margin-top: 30px;
+            font-size: 18px;
+            background-color: #27ae60;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+    <h1>Predicted Traffic Volume</h1><br>
+    <h2>{{ volume }}</h2><br>
+    <a href="{{ url_for('index') }}"><button>🔙 Back to Home</button></a>
+</body>
+</html>
+
